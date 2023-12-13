@@ -3,7 +3,6 @@ module github.com/lichdu29/checkers
 go 1.16
 
 require (
-	cosmossdk.io/errors v1.0.0
 	github.com/cosmos/cosmos-sdk v0.45.4
 	github.com/cosmos/ibc-go/v3 v3.0.0
 	github.com/gogo/protobuf v1.3.3

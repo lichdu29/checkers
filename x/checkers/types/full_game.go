@@ -13,8 +13,8 @@ func (storedGame StoredGame) GetBlackAddress() (black sdk.AccAddress, err error)
 }
 
 func (storedGame StoredGame) GetRedAddress() (red sdk.AccAddress, err error) {
-    black, errBlack := sdk.AccAddressFromBech32(storedGame.Black)
-    return black, sdkerrors.Wrapf(errBlack, ErrInvalidRed.Error(), storedGame.Black)
+    red, errRed := sdk.AccAddressFromBech32(storedGame.Red)
+    return red, sdkerrors.Wrapf(errRed, ErrInvalidRed.Error(), storedGame.Red)
 }
 
 func (storedGame StoredGame) ParseGame() (game *rules.Game, err error) {
